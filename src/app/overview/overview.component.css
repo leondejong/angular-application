@@ -1,0 +1,32 @@
+.overview {
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  padding: 1rem;
+  border-spacing: 0.125rem;
+}
+
+.header {
+  background: rgba(63, 63, 63, 1);
+}
+
+.body {
+  background: rgba(47, 47, 47, 1);
+}
+
+.heading {
+  padding: 0.25rem;
+  border-radius: 0.125rem;
+  font-weight: 700;
+}
+
+.info {
+  margin: 0 1rem;
+  text-align: right;
+}
+
+app-entry {
+  display: none;
+}

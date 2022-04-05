@@ -1,0 +1,47 @@
+<section class="edit">
+  <app-not-found *ngIf="!item; else elseBlock"></app-not-found>
+  <ng-template #elseBlock>
+    <form class="body" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="field">
+        ID: {{item.id}}, Active:
+        <input
+          id="active"
+          type="checkbox"
+          class="input checkbox active"
+          formControlName="active"
+        />
+      </div>
+      <app-input-text
+        id="name"
+        placeholder="name"
+        class="name"
+        formControlName="name"
+      ></app-input-text>
+      <app-input-text
+        id="link"
+        placeholder="link"
+        class="link"
+        formControlName="link"
+      ></app-input-text>
+      <app-textarea
+        id="content"
+        placeholder="content"
+        class="content"
+        formControlName="content"
+      ></app-textarea>
+      <div class="message" *ngIf="this.message">
+        {{this.message}}
+      </div>
+      <div class="actions">
+        <app-button type="submit" class="edit">
+          Submit
+        </app-button>
+      </div>
+    </form>
+  </ng-template>
+  <div class="nav">
+    <a class="link" routerLink="/overview" routerLinkActive="active"
+      >Overview</a
+    >
+  </div>
+</section>

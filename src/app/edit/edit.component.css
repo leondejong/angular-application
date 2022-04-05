@@ -1,0 +1,57 @@
+@import '../elements/input.css';
+
+.edit {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.body {
+  margin: 0 15% 4rem 15%;
+  white-space: pre-wrap;
+}
+
+.message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(0, 159, 255, 1);
+}
+
+.actions {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.nav {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 1rem 1rem 2rem;
+  text-align: left;
+  z-index: 1;
+}
+
+.link {
+  color: rgba(255, 255, 255, 1);
+}
+
+.name,
+.link,
+.content {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.content {
+  height: 24rem;
+}
+
+.input.checkbox {
+  margin-bottom: 0.25rem;
+  vertical-align: middle;
+}

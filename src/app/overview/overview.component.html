@@ -1,0 +1,32 @@
+<div class="overview">
+  <table class="table">
+    <thead class="header">
+      <tr class="row">
+        <th class="heading">Id</th>
+        <th class="heading">Name</th>
+        <th class="heading">Link</th>
+        <th class="heading">Actions</th>
+      </tr>
+    </thead>
+    <tbody class="body">
+      <app-entry
+        *ngFor="let item of list"
+        [item]="item"
+        (remove)="removeItem($event.id)"
+      ></app-entry>
+    </tbody>
+  </table>
+  <div class="info">
+    <app-button
+      class="add"
+      (click)="addItem({
+        id: 0,
+        name: 'name',
+        link: '',
+        content: '',
+        active: false
+      })"
+      >Add Item</app-button
+    >
+  </div>
+</div>

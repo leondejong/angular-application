@@ -1,0 +1,29 @@
+.layout {
+  display: flow-root;
+  height: 100%;
+  overflow: auto;
+  background: rgba(31, 31, 31, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.header {
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.main {
+  padding: 0 2rem;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 2rem 1rem 1rem;
+  text-align: right;
+}

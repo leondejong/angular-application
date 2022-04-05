@@ -1,0 +1,19 @@
+<ng-template #entry>
+  <tr class="row">
+    <td class="data">{{item.id}}</td>
+    <td class="data">{{item.name}}</td>
+    <td class="data">
+      <a class="link" [routerLink]="['/detail', item.id]">
+        detail
+      </a>
+    </td>
+    <td class="data">
+      <app-button class="action edit" [routerLink]="['/edit', item.id]">
+        edit
+      </app-button>
+      <app-button class="action remove" (click)="removeEntry()">
+        remove
+      </app-button>
+    </td>
+  </tr>
+</ng-template>
