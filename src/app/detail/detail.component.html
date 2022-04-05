@@ -1,0 +1,18 @@
+<section class="detail">
+  <app-not-found *ngIf="!item; else elseBlock"></app-not-found>
+  <ng-template #elseBlock>
+    <div>
+      <h3 class="title">{{item.name}}</h3>
+      <div class="body">
+        <a href="{{item.link}}" class="link article">{{item.link}}</a>
+        <p class="text">{{item.content}}</p>
+        <p class="active">Active: {{item.active}}</p>
+      </div>
+    </div>
+  </ng-template>
+  <div class="nav">
+    <a class="link" routerLink="/overview" routerLinkActive="active"
+      >Overview</a
+    >
+  </div>
+</section>
